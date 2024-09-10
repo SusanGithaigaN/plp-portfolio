@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Susan Githaiga</title>
+    <link rel="stylesheet" src="./styles.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            accentColor: "#A61B16",
+            },
+            boxShadow: {
+            glow: '0 0 16px 1px rgb(255, 179, 205)',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="my-portfolio">
+            <!-- Render pages -->
+    <div class="home">
+        <!-- 1. Navbar -->
+        <div id="navbar"></div>
+        <!-- 2. homepage -->
+        <div id="home-page"></div>
+    </div>
+  </body>
+</html>
+
+<!-- JS Scripts to render pages -->
+<script>
+    $(function () {
+      $("#navbar").load("./navbar.html");
+      $("#home-page").load("./home.html");
+    });
+  </script>
