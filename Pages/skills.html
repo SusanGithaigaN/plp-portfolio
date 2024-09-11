@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto px-4 py-4" id="experience-education">
+        <div class="container w-full py-4 flex flex-col items-start gap-16">
+            <p
+                class="text-xl md:text-2xl lg:text-3xl leading-6 py-8 font-semibold hover:border-b-4 hover:border-b-accentColor md:border-0 md:p-0">
+                Skills and Interests
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-10 gap-x-40">
+            <!-- experience -->
+            <div class="row-spa ...">
+                <p class="text-2xl leading-6 py-8 font-light">Interests</p>
+                <div class="flex flex-col items-start py-4">
+                    <div class="flex items-center mb-4">
+                        <img class="img-fluid w-10 h-10 mr-6"
+                            src="https://res.cloudinary.com/dfczhaomn/image/upload/v1726044134/code_psu9xa.svg"
+                            alt="t" />
+                        <div class="py-2">
+                            <p class="font-bold text-xl">Web Development</p>
+                            <p class="text-md font-thin">
+                                I offer top-notch web development services tailored to your specific needs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- theme-img -->
+                    <!-- <img class="img-fluid w-full h-auto rounded-xl mb-4"
+                        src="https://res.cloudinary.com/dfczhaomn/image/upload/v1726028839/Hireo_nkwrkg.webp" /> -->
+
+                    <hr class="border-gray-300 border-t border-t-2 w-full my-4">
+                </div>
+
+                <div class="flex flex-col items-start py-4">
+                    <div class="flex items-center mb-4">
+                        <img class="img-fluid w-10 h-10 mr-6"
+                            src="https://res.cloudinary.com/dfczhaomn/image/upload/v1726044255/cogs-svgrepo-com_yr3m56.svg"
+                            alt="t" />
+                        <div class="py-2">
+                            <p class="font-bold text-xl">API Development</p>
+                            <p class="tex-md font-thin">
+                                I provide high-quality API development services customized to meet your unique
+                                requirements.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="border-gray-300 border-t border-t-2 w-full">
+                </div>
+
+                <div class="flex flex-col items-start py-4">
+                    <div class="flex items-center mb-4">
+                        <img class="img-fluid w-10 h-10 mr-6"
+                            src="https://res.cloudinary.com/dfczhaomn/image/upload/v1726047906/design-tool_elq1c3.svg"
+                            alt="t" />
+                        <div class="py-2">
+                            <p class="font-bold text-xl">UI/UX Design</p>
+                            <p class="text-md font-thin">
+                                I provide exceptional UI/UX design services that are carefully crafted to align with
+                                your specific requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- theme-img -->
+                    <!-- <img class="img-fluid w-full h-auto rounded-xl mb-4"
+                        src="https://res.cloudinary.com/dfczhaomn/image/upload/v1726045174/Screenshot_2024-06-16_143210_p72lm1.png" /> -->
+
+                    <hr class="border-gray-300 border-t border-t-2 w-full my-4">
+                </div>
+
+                <div class="flex flex-col items-start py-4">
+                    <div class="flex items-center mb-4">
+                        <img class="img-fluid w-10 h-10 mr-6"
+                            src="https://res.cloudinary.com/dfczhaomn/image/upload/v1726028958/time_xoiojz.svg"
+                            alt="t" />
+                        <p class="font-bold text-xl">Social Media Marketing</p>
+                    </div>
+                    <hr class="border-gray-300 border-t border-t-2 w-full">
+                </div>
+
+            </div>
+            <!-- skills-->
+            <div class="row-spa ...">
+                <p class="text-2xl leading-6 py-8 font-light">Skills</p>
+                <dv id="languages"></dv>                
+
+            </div>
+        </div>
+
+</body>
+
+</html>
+<!-- render programming languages -->
+<script>
+    $(function () {
+      $("#languages").load("./Pages/languages.html");
+    });
+  </script>
