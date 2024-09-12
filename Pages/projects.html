@@ -1,101 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="bg-[#fff3f5] h-48 px-6">
-      <div
-        class="container max-w-screen-xl flex flex-wrap items-center justify-center mx-auto px-4 py-4 md:py-8 lg:py-8 h-full bg-white rounded-t-xl shadow-2xl"
-      >
-        <p
-          class="text-xl md:text-2xl lg:text-3xl leading-6 py-8 font-semibold hover:border-b-4 hover:border-b-accentColor md:border-0 md:p-0"
-        >
-          My recent work
-        </p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="bg-[#fff3f5] h-48 px-6">
+    <div
+      class="container max-w-screen-xl flex flex-wrap items-center justify-center mx-auto px-4 py-4 md:py-8 lg:py-8 h-full bg-white rounded-t-xl shadow-2xl">
+      <p
+        class="text-xl md:text-2xl lg:text-3xl leading-6 py-8 font-semibold hover:border-b-4 hover:border-b-accentColor md:border-0 md:p-0">
+        My recent work
+      </p>
     </div>
+  </div>
 
-    <!-- projects -->
-    <div class="h-full px-6 mb-10">
-      <div
-        class="container max-w-screen-xl flex flex-wrap items-center justify-center mx-auto px-4 py-4 md:py-8 lg:py-8 h-full bg-white rounded-b-xl shadow-2xl"
-      >
-        <div id="projects-container" class="-mx-4 flex flex-wrap py-8"></div>
-      </div>
+  <!-- projects -->
+  <div class="h-full px-6 mb-10">
+    <div
+      class="container max-w-screen-xl flex flex-wrap items-center justify-center mx-auto px-4 py-4 md:py-8 lg:py-8 h-full bg-white rounded-b-xl shadow-2xl">
+      <div id="projects-container" class="-mx-4 flex flex-wrap py-8"></div>
     </div>
+  </div>
 
-    <script>
-      const projects = [
-        {
-          title: "Almaid",
-          description:
-            "A landing for a cleaning services company. Integrated with tools like Google Analytics, Meta Business suite, and Mailchimp.",
-          imageUrl:
-            "https://res.cloudinary.com/dfczhaomn/image/upload/v1726028826/Almaid-SMC_ztz9vh.png",
-          githubUrl: "https://github.com/SusanGithaigaN/smc-project-demo",
-          websiteUrl: "https://trello-clone-gilt-psi.vercel.app/",
-        },
-        {
-          title: "Trello Clone",
-          description: "Trello clone built using Vue.js & Nuxt.js",
-          imageUrl:
-            "https://res.cloudinary.com/dfczhaomn/image/upload/v1726054419/Screenshot_2024-09-11_143302_jrluso.png",
-          githubUrl: "https://github.com/SusanGithaigaN/trello-clone",
-          websiteUrl: "https://trello-clone-gilt-psi.vercel.app/",
-        },
-        {
-          title: "Eatico",
-          description:
-            "A React+Vite app that utilizes the Keto API to generate nutrition analysis data on various foods. A user can view and search for a food type, and also view the nutritional contents and recipe for the food.",
-          imageUrl:
-            "https://res.cloudinary.com/dfczhaomn/image/upload/v1726028826/Eatico_fzjanf.webp",
-          githubUrl: "https://github.com/SusanGithaigaN/health-api",
-          websiteUrl: "https://health-api-kappa.vercel.app/",
-        },
-        {
-          title: "Sunnyside",
-          description:
-            "Frontend mentor challenge to build frontend development skills",
-          imageUrl:
-            "https://res.cloudinary.com/dfczhaomn/image/upload/v1726161571/Screenshot_2024-09-12_201832_w5bqsl.png",
-          githubUrl:
-            "https://github.com/SusanGithaigaN/sunnyside-agency-landing-page-main",
-          websiteUrl: "https://sunnyside-agency-landing-githaiga.netlify.app/",
-        },
-        {
-          title: "FitLinka",
-          description:
-            "Experience the synergy of design and fitness with my Figma project—an innovative and visually engaging fitness app. Meticulously crafted to elevate my design skills, this project seamlessly blends aesthetic appeal with user-centric functionali",
-          imageUrl:
-            "https://susan-njeri-githaiga.vercel.app/static/media/FitLinka-ui.b883c57f1dcb6221be9d.png",
-          githubUrl:
-            "https://www.figma.com/proto/d2ZKTO8DG0XSo31wZX3M5r/FitLinka-app?type=design&node-id=1-2&t=nU95ESTnZ0qeUzeu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-          websiteUrl:
-            "https://www.figma.com/proto/d2ZKTO8DG0XSo31wZX3M5r/FitLinka-app?type=design&node-id=1-2&t=nU95ESTnZ0qeUzeu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
-        },
-      ];
-      // fetch projects & map them onto a responsive grid
-      const projectsContainer = document.getElementById("projects-container");
+  <script>
+    const projects = [
+      {
+        title: "Almaid",
+        description:
+          "A landing for a cleaning services company. Integrated with tools like Google Analytics, Meta Business suite, and Mailchimp.",
+        imageUrl:
+          "https://res.cloudinary.com/dfczhaomn/image/upload/v1726028826/Almaid-SMC_ztz9vh.png",
+        githubUrl: "https://github.com/SusanGithaigaN/smc-project-demo",
+        websiteUrl: "https://trello-clone-gilt-psi.vercel.app/",
+      },
+      {
+        title: "Trello Clone",
+        description: "Trello clone built using Vue.js & Nuxt.js",
+        imageUrl:
+          "https://res.cloudinary.com/dfczhaomn/image/upload/v1726054419/Screenshot_2024-09-11_143302_jrluso.png",
+        githubUrl: "https://github.com/SusanGithaigaN/trello-clone",
+        websiteUrl: "https://trello-clone-gilt-psi.vercel.app/",
+      },
+      {
+        title: "Eatico",
+        description:
+          "A React+Vite app that utilizes the Keto API to generate nutrition analysis data on various foods. A user can view and search for a food type, and also view the nutritional contents and recipe for the food.",
+        imageUrl:
+          "https://res.cloudinary.com/dfczhaomn/image/upload/v1726028826/Eatico_fzjanf.webp",
+        githubUrl: "https://github.com/SusanGithaigaN/health-api",
+        websiteUrl: "https://health-api-kappa.vercel.app/",
+      },
+      {
+        title: "Sunnyside",
+        description:
+          "Frontend mentor challenge to build frontend development skills",
+        imageUrl:
+          "https://res.cloudinary.com/dfczhaomn/image/upload/v1726161571/Screenshot_2024-09-12_201832_w5bqsl.png",
+        githubUrl:
+          "https://github.com/SusanGithaigaN/sunnyside-agency-landing-page-main",
+        websiteUrl: "https://sunnyside-agency-landing-githaiga.netlify.app/",
+      },
+      {
+        title: "FitLinka",
+        description:
+          "Experience the synergy of design and fitness with my Figma project—an innovative and visually engaging fitness app. Meticulously crafted to elevate my design skills, this project seamlessly blends aesthetic appeal with user-centric functionality.",
+        imageUrl:
+          "https://susan-njeri-githaiga.vercel.app/static/media/FitLinka-ui.b883c57f1dcb6221be9d.png",
+        githubUrl:
+          "https://www.figma.com/proto/d2ZKTO8DG0XSo31wZX3M5r/FitLinka-app?type=design&node-id=1-2&t=nU95ESTnZ0qeUzeu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+        websiteUrl:
+          "https://www.figma.com/proto/d2ZKTO8DG0XSo31wZX3M5r/FitLinka-app?type=design&node-id=1-2&t=nU95ESTnZ0qeUzeu-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design",
+      },
+    ];
+    // fetch projects & map them onto a responsive grid
+    const projectsContainer = document.getElementById("projects-container");
 
-      projects.forEach((project) => {
-        const projectDiv = document.createElement("div");
-        projectDiv.classList.add(
-          "w-full",
-          "md:w-1/2",
-          "lg:w-1/3",
-          "mb-6",
-          "px-4",
-          "flex"
-        );
+    projects.forEach((project) => {
+      const projectDiv = document.createElement("div");
+      projectDiv.classList.add(
+        "w-full",
+        "md:w-1/2",
+        "lg:w-1/3",
+        "mb-6",
+        "px-4",
+        "flex"
+      );
 
-        projectDiv.innerHTML = `
+      projectDiv.innerHTML = `
           <div class="flex flex-col h-full bg-white rounded-lg shadow-md p-4">
             <div class="relative h-48 w-full mb-4">
               <img class="w-full h-full object-cover" src="${project.imageUrl}" alt="${project.title} Image" />
@@ -121,8 +117,9 @@
           </div>
         `;
 
-        projectsContainer.appendChild(projectDiv);
-      });
-    </script>
-  </body>
+      projectsContainer.appendChild(projectDiv);
+    });
+  </script>
+</body>
+
 </html>
